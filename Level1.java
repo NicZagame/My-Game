@@ -39,13 +39,28 @@ public class Level1 extends World
         Platform platform5 = new Platform();
         addObject(platform5, 1239, 355);
         
+        Platform platform6 = new Platform();
+        addObject(platform6, 1060, 740);
+        
         Portal portal = new Portal();
-        addObject(portal,1290,302);
+        addObject(portal,1290,284);
+        
+        MusicPlayer music = new MusicPlayer(true);
+        addObject(music, 335,102);
+        
+        Tortle spikyboi = new Tortle();
+        addObject(spikyboi,994,702);
+        
+        Mushroom mush = new Mushroom();
+        addObject(mush,1108,696);
+        
+        Warning warn = new Warning();
+        addObject(warn,1100,650);
         
         
         
-        Ember ember = new Ember();
-        addObject(ember, getHeight()/9, 540);
+        Ember ember = new Ember(music);
+        addObject(ember, 87, 624);
         
     }
     

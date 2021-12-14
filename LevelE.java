@@ -16,6 +16,11 @@ public class LevelE extends World
     public LevelE()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(832, 468, 1); 
+        setBackground("Background.png");
+        
+        
+        
+        
     }
 }

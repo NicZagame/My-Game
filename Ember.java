@@ -13,15 +13,19 @@ public class Ember extends Actor
     private int acceleration = 2;
     private int jumpStrength = 26;
     private String jump;
+    GifImage serai = new GifImage("Righthover.gif");
+    GifImage serai1 = new GifImage("Lefthover.gif");
+    private MusicPlayer music;
     
     
     
     /**
-     * IMAGE CREDIT to Yuan Ag: yuan1935ag@hotmail.com
-     */    
-    public Ember()
+     * : Music by Marllon Silva (xDeviruchi)
+     */
+    public Ember(MusicPlayer music)
     {
         this.jump = jump;
+        this.music = music;
     }
     /**
      * Act - do whatever the Duke wants to do. This method is called whenever
@@ -32,8 +36,12 @@ public class Ember extends Actor
         checkKeys();
         checkFall();
         reset();
-        
+        nextLevel();
+        mouse();
+        nextLevel2();
+        Enemies();
     }
+    
     public void reset()
     {
         if (getX() >= getWorld().getWidth()-1)
@@ -47,18 +55,19 @@ public class Ember extends Actor
             vSpeed=0;
         }
     }
-    public void checkKeys()
+        public void checkKeys()
     {
         if (Greenfoot.isKeyDown("right"))
         {
             moveRight();
-            setImage("Ember1.png");
+            setImage(serai.getCurrentImage());
+            
         }
         
         if (Greenfoot.isKeyDown("left"))
         {
             moveLeft();
-            setImage("EmberLeft.png");
+            setImage(serai1.getCurrentImage());
         } 
         
         if (Greenfoot.isKeyDown("space")&& onPlatform())
@@ -132,14 +141,37 @@ public class Ember extends Actor
     public void nextLevel()
     {
        Actor portal = getOneIntersectingObject(Portal.class); 
-       if(portal == null)
+       if(portal != null)
        {
+          Greenfoot.setWorld(new Level2()); 
+          music.stopMusic();
+       }
+       
+    }
+    public void Enemies()
+    {
+       if(isTouching(Tortle.class))
+       {
+          setLocation(77, 540);
+            vSpeed=0;
            
        }
-       else
+       if(isTouching(Mushroom.class))
        {
-           Greenfoot.setWorld(new Level2());
+          setLocation(77, 540);
+            vSpeed=0;
        }
+       
+    }
+    public void nextLevel2()
+    {
+       Actor portal2 = getOneIntersectingObject(Portal2.class); 
+       if(portal2!= null)
+       {
+          Greenfoot.setWorld(new Level3()); 
+          music.stopMusic();
+       }
+       
     }
     
 }

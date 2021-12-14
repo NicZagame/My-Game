@@ -26,7 +26,7 @@ public class Level2 extends World
         addObject(platform1, 404, 560);
         
         Platform platform2 = new Platform();
-        addObject(platform2, 722, 777);
+        addObject(platform2, 692, 710);
         
         Platform platform3 = new Platform();
         addObject(platform3, 993, 665);
@@ -44,16 +44,22 @@ public class Level2 extends World
         addObject(platform7, 499, 158);
         
         Platform platform8 = new Platform();
-        addObject(platform8, 760, 298);
+        addObject(platform8, 733, 249);
         
         Platform platform9 = new Platform();
-        addObject(platform9, 995, 220);
+        addObject(platform9, 978, 402);
         
         Platform platform10 = new Platform();
-        addObject(platform10, 1237, 160);
+        addObject(platform10, 1237, 244);
         
-        Ember ember = new Ember();
-        addObject(ember, getHeight()/9, 540);
+        Portal2 portal2 = new Portal2();
+        addObject(portal2,48,84);
+        
+        MusicPlayer music = new MusicPlayer(false);
+        addObject(music, 335,102);
+        
+        Ember ember = new Ember(music);
+        addObject(ember, getHeight()/2, 540);
         
     }
     

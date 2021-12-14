@@ -8,12 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Portal extends Actor
 {
+    GifImage portal = new GifImage("Portal.gif");
     /**
-     * Act - do whatever the Portal wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     *
+     * Art Created By: PixelZoink 
+     *
+     *
+     *
+     *Act - do whatever the Portal wants to do. This method is called whenever
+     the 'Act' or 'Run' button gets pressed in the environment.
      */
+     
     public void act()
     {
-        // Add your action code here.
+        setImage(portal.getCurrentImage());
     }
 }
