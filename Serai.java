@@ -75,11 +75,6 @@ public class Serai extends Actor
             moveLeft();
             setImage(serai1.getCurrentImage());
         } 
-        if (Greenfoot.isKeyDown("down"))
-        {
-           
-            setImage(serai2.getCurrentImage());
-        } 
         if (Greenfoot.isKeyDown("space")&& onPlatform())
         {
             jump();
