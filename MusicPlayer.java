@@ -9,16 +9,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MusicPlayer extends Actor
 {
     private boolean musicPlayed;
-    private GreenfootSound music0 = new GreenfootSound("track1.wav");
-    private GreenfootSound music1 = new GreenfootSound("track2.wav");
-    private GreenfootSound music2 = new GreenfootSound("track3.wav");
-    private GreenfootSound music3 = new GreenfootSound("track4.wav");
-    private GreenfootSound music4 = new GreenfootSound("track5.wav");
-    private GreenfootSound music5 = new GreenfootSound("track6.wav");
-    private GreenfootSound music6 = new GreenfootSound("track7.wav");
-    private GreenfootSound music7 = new GreenfootSound("track8.wav");
-    private GreenfootSound music8 = new GreenfootSound("track9.wav");
-    private GreenfootSound music9 = new GreenfootSound("track10.wav");
+    private GreenfootSound music0 = new GreenfootSound("track1.mp3");
+    private GreenfootSound music1 = new GreenfootSound("track2.mp3");
+    private GreenfootSound music2 = new GreenfootSound("track3.mp3");
+    private GreenfootSound music3 = new GreenfootSound("track4.mp3");
+    private GreenfootSound music4 = new GreenfootSound("track5.mp3");
+    private GreenfootSound music5 = new GreenfootSound("track6.mp3");
+    private GreenfootSound music6 = new GreenfootSound("track7.mp3");
+    private GreenfootSound music7 = new GreenfootSound("track8.mp3");
+    private GreenfootSound music8 = new GreenfootSound("track9.mp3");
+    private GreenfootSound music9 = new GreenfootSound("track10.mp3");
     private GreenfootSound music10 = new GreenfootSound("BatHell.mp3");
     
     public MusicPlayer(boolean lvl1)
