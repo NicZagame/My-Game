@@ -18,7 +18,7 @@ public class shigginsduck extends Easteregg
     {
         image1 = new GreenfootImage("duck1.png");
         image2 = new GreenfootImage("duck3.png");
-        image3 = new GreenfootImage("Shiggins-.png");
+
         
     }
     /**
@@ -42,10 +42,7 @@ public class shigginsduck extends Easteregg
         {
             
         }
-        if(getImage() == image3)
-        {
-            timer = 0;
-        }
+        
     }
     public void bouncyDuck()
     {

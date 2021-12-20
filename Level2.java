@@ -53,13 +53,42 @@ public class Level2 extends World
         addObject(platform10, 1237, 244);
         
         Portal2 portal2 = new Portal2();
-        addObject(portal2,48,84);
+        addObject(portal2,48,100);
         
         MusicPlayer music = new MusicPlayer(false);
         addObject(music, 335,102);
         
-        Ember ember = new Ember(music);
-        addObject(ember, getHeight()/2, 540);
+        Mushroom mush0 = new Mushroom();
+        addObject(mush0,450,529);
+        
+        Mushroom mush1 = new Mushroom();
+        addObject(mush1,1071,636);
+        
+        Mushroom mush2 = new Mushroom();
+        addObject(mush2,1318,515);
+        
+        Mushroom mush3 = new Mushroom();
+        addObject(mush3,918,370);
+        
+        Minimush mush4 = new Minimush();
+        addObject(mush4, 1313, 210);
+        
+        Tortle spikyboi0 = new Tortle();
+        addObject(spikyboi0, 765,672);
+        
+        Tortle spikyboi1 = new Tortle();
+        addObject(spikyboi1, 662,212);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Serai serai= new Serai(music);
+        addObject(serai, 79, 622);
         
     }
     

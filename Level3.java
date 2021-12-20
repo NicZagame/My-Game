@@ -33,11 +33,14 @@ public class Level3 extends World
         MusicPlayer music = new MusicPlayer(false);
         addObject(music, 335,102);
         
-        Ember ember = new Ember(music);
-        addObject(ember, getHeight()/2, 540);
+        Serai serai = new Serai(music);
+        addObject(serai, getHeight()/2, 540);
         
         BOSS boss = new BOSS();
         addObject(boss, 1113, 585);
+        
+        End end = new End();
+        addObject(end,951,401);
         
 
         

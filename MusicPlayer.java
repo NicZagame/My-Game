@@ -19,6 +19,7 @@ public class MusicPlayer extends Actor
     private GreenfootSound music7 = new GreenfootSound("track8.wav");
     private GreenfootSound music8 = new GreenfootSound("track9.wav");
     private GreenfootSound music9 = new GreenfootSound("track10.wav");
+    private GreenfootSound music10 = new GreenfootSound("BatHell.mp3");
     
     public MusicPlayer(boolean lvl1)
     {
@@ -101,7 +102,7 @@ public class MusicPlayer extends Actor
             music7.stop();
             music8.stop();
             music9.stop();
-        
+            music10.stop();
     }
         public void Track1()
     {
@@ -180,6 +181,14 @@ public class MusicPlayer extends Actor
         if(!music9.isPlaying())
         {
             music9.playLoop();
+            musicPlayed = true;
+        }
+    }
+    public void Track11()
+    {
+        if(!music10.isPlaying())
+        {
+            music10.playLoop();
             musicPlayed = true;
         }
     }

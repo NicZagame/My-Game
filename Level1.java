@@ -42,8 +42,11 @@ public class Level1 extends World
         Platform platform6 = new Platform();
         addObject(platform6, 1060, 740);
         
+        Secret platform7 = new Secret();
+        addObject(platform7, 1258, 740);
+        
         Portal portal = new Portal();
-        addObject(portal,1290,284);
+        addObject(portal,1290,300);
         
         MusicPlayer music = new MusicPlayer(true);
         addObject(music, 335,102);
@@ -52,15 +55,18 @@ public class Level1 extends World
         addObject(spikyboi,994,702);
         
         Mushroom mush = new Mushroom();
-        addObject(mush,1108,696);
+        addObject(mush,1083,708);
+        
+        Bat bat = new Bat();
+        addObject(bat,1291,692);
         
         Warning warn = new Warning();
         addObject(warn,1100,650);
         
         
         
-        Ember ember = new Ember(music);
-        addObject(ember, 87, 624);
+        Serai serai = new Serai(music);
+        addObject(serai, 87, 624);
         
     }
     

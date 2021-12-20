@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Portal here.
+ * This here be a portal to level 2
  * 
  * @author (your name) 
  * @version (a version number or a date)

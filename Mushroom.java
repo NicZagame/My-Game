@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Mushroom here.
+ * Enemy #2 The mushroom
  * 
  * @author (your name) 
  * @version (a version number or a date)

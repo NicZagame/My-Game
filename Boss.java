@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BOSS extends Actor
 {
-    GifImage boss = new GifImage("Boss/GolemIdle.gif");
+    GifImage boss = new GifImage("Boss/BossIdle.gif");
     /**
      * Act - do whatever the BOSS wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
